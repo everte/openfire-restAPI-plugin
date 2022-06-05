@@ -16,6 +16,7 @@
 
 package org.jivesoftware.openfire.plugin.rest.entity;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -27,6 +28,9 @@ public class MessageEntity {
 
     /** The body. */
     private String body;
+    private String to;
+    private String from;
+    private String type;
 
     /**
      * Instantiates a new message entity.
@@ -52,5 +56,33 @@ public class MessageEntity {
      */
     public void setBody(String body) {
         this.body = body;
+    }
+
+
+    @XmlAttribute
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    @XmlAttribute
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    @XmlAttribute
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

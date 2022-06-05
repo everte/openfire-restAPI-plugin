@@ -8,6 +8,7 @@
     <version>${project.version}</version>
     <date>2022-02-24</date>
     <minServerVersion>4.7.0</minServerVersion>
+    <csrfProtectionEnabled>false</csrfProtectionEnabled>
     <adminconsole>
         <tab id="tab-server">
             <sidebar id="sidebar-server-settings">
